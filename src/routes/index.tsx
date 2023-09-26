@@ -2,6 +2,7 @@ import { component$, useSignal, useVisibleTask$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { assets } from '@/utils/asset-utils';
 import { type Framework, frameworks } from '@/utils/framework-utils';
+import FrameworkRotation from '@/components/FrameworkRotation';
 
 export default component$(() => {
   const currentFramework = useSignal<Framework>(frameworks[0]);
@@ -80,7 +81,8 @@ export default component$(() => {
               height={50}
               width={50}
             />
-            to Framework will <span>never</span> be the same again
+            to <FrameworkRotation currentFramework={currentFramework.value} />{' '}
+            will <span>never</span> be the same again
           </h1>
         </div>
       </div>
