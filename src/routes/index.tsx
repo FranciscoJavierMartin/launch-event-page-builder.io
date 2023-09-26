@@ -5,6 +5,7 @@ import { type Framework, frameworks } from '@/utils/framework-utils';
 
 export default component$(() => {
   const currentFramework = useSignal<Framework>(frameworks[0]);
+  const showBackground = useSignal<boolean>(false);
 
   useVisibleTask$(({ cleanup }) => {
     let currentIndex: number = 0;
@@ -17,6 +18,10 @@ export default component$(() => {
     const intervalId = setInterval(rotateFrameworks, 2000);
 
     cleanup(() => clearInterval(intervalId));
+  });
+
+  useVisibleTask$(() => {
+    showBackground.value = true;
   });
 
   return (
@@ -54,7 +59,17 @@ export default component$(() => {
           backgroundSize: '30px',
           backgroundImage: `url(${assets.square})`,
         }}
-      ></div>
+      />
+      <div
+        class={[
+          'bg-black',
+          'fixed',
+          'inset-0',
+          'transition-opacity',
+          'duration-[1500ms]',
+          showBackground.value ? 'opacity-0' : 'opacity-100',
+        ]}
+      />
     </main>
   );
 });
