@@ -6,11 +6,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Welcome to Qwik',
+  title: 'Builder.io Velocity',
   meta: [
     {
       name: 'description',
-      content: 'Qwik site description',
+      content: 'AI Launch Event!',
     },
   ],
 };
