@@ -70,6 +70,20 @@ export default component$(() => {
           showBackground.value ? 'opacity-0' : 'opacity-100',
         ]}
       />
+      <div class='max-w-7xl mt-20 mx-auto'>
+        <div class='flex flex-col items-center relative z-10'>
+          <h1 class='text-5xl max-w-3xl text-center leading-snug mb-12'>
+            <img
+              alt='Figma logo'
+              src={assets.figma}
+              class='inline-block mr-8 -mt-2'
+              height={50}
+              width={50}
+            />
+            to Framework will <span>never</span> be the same again
+          </h1>
+        </div>
+      </div>
     </main>
   );
 });
