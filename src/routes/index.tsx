@@ -102,6 +102,24 @@ export default component$(() => {
             </span>{' '}
             be the same again
           </h1>
+          <p class='mb-8'>
+            <span class='text-gray-300'>Join us for an AI launch event by</span>
+            <img
+              alt='Builder.io logo'
+              class='inline-block ml-1 -mt-1'
+              height={20}
+              width={100}
+              src={assets.builder}
+            />
+            {' + '}
+            <img
+              alt='Figma logo'
+              class='inline-block mx-1'
+              height={20}
+              width={55}
+              src={assets.figmatwo}
+            />
+          </p>
         </div>
       </div>
     </main>
