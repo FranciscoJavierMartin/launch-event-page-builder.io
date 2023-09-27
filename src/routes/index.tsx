@@ -148,6 +148,98 @@ export default component$(() => {
           </div>
           <CountdownTimer currentFramework={currentFramework} />
         </div>
+        <div class='relative flex pointer-events-none mt-20'>
+          <img
+            loading='lazy'
+            decoding='async'
+            sizes='200px'
+            style='object-fit: cover; width: 200px; height: 100px;'
+            src='https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fb35ed803c96845ba94bb627a008c7c76?format=webp&amp;width=200&amp;height=100&amp;fit=cover&amp;sharp=true'
+            width='200'
+            height='100'
+            class='backdrop-blur-sm absolute transition-all duration-700 z-40 l-5 !w-48 md:!w-[200px] top-[-100px] md:top-[-200px] md:left-1/2 md:!ml-[-470px] pointer-events-none opacity-100'
+          />
+          <div class='p-5 text-sm whitespace-pre text-neutral-200 pointer-events-none mx-auto min-w-[530px]'>
+            <code class='language-javascript relative'>
+              <div>
+                <span class='opacity-50'>
+                  {'export default function Page() {'}
+                </span>
+              </div>
+              <div>
+                <span class='opacity-50'>{'  return ('}</span>
+              </div>
+              <span class='hljs-tag'>
+                {'    '}&lt;<span class='hljs-name'>div</span>{' '}
+                <span class='hljs-attr'>className</span>=
+                <span class='hljs-string'>"flex flex-col"</span>&gt;
+              </span>
+              <div>
+                {' '}
+                <span class='hljs-tag'>
+                  {'     '}&lt;<span class='hljs-name'>Heading</span> /&gt;
+                </span>
+              </div>
+              <div>
+                {' '}
+                <span class='hljs-tag'>
+                  {'     '}&lt;<span class='hljs-name'>Paragraph</span>{' '}
+                  <span class='hljs-attr'>className</span>=
+                  <span class='hljs-string'>"mt-6 self-center"</span> /&gt;
+                </span>
+              </div>
+              <div>
+                {' '}
+                <span class='hljs-tag'>
+                  {'     '}&lt;<span class='hljs-name'>div</span>{' '}
+                  <span class='hljs-attr'>className</span>=
+                  <span class='hljs-string'>"flex self-center gap-6"</span>&gt;
+                </span>
+              </div>
+              <div>
+                {' '}
+                <span class='hljs-tag'>
+                  {'       '}&lt;<span class='hljs-name'>TextField</span> /&gt;
+                </span>
+              </div>
+              <div>
+                {' '}
+                <span class='hljs-tag'>
+                  {'       '}&lt;<span class='hljs-name'>Register</span>{' '}
+                  <span class='hljs-attr'>className</span>=
+                  <span class='hljs-string'>"mt-1"</span> /&gt;
+                </span>
+              </div>
+              <div>
+                {' '}
+                <span class='hljs-tag'>
+                  {'     '}&lt;/<span class='hljs-name'>div</span>&gt;
+                </span>
+              </div>
+              <div>
+                {' '}
+                <span class='hljs-tag'>
+                  {'     '}&lt;<span class='hljs-name'>Countdown</span>{' '}
+                  <span class='hljs-attr'>className</span>=
+                  <span class='hljs-string'>"mt-4 self-center"</span> /&gt;
+                </span>
+              </div>
+              <div>
+                {' '}
+                <span class='hljs-tag'>
+                  {'   '}&lt;/<span class='hljs-name'>div</span>&gt;
+                </span>
+              </div>
+              <div>
+                {' '}
+                <span class='opacity-50'>);</span>
+              </div>
+              <div>
+                <span class='opacity-50'>{'}'}</span>
+              </div>
+            </code>
+          </div>
+        </div>
       </div>
     </main>
   );
