@@ -82,7 +82,25 @@ export default component$(() => {
               width={50}
             />
             to <FrameworkRotation currentFramework={currentFramework.value} />{' '}
-            will <span>never</span> be the same again
+            will{' '}
+            <span
+              class={[
+                'transition-colors',
+                'duration-200',
+                { 'text-purple-300': currentFramework.value === 'qwik' },
+                { 'text-sky-300': currentFramework.value === 'safari' },
+                { 'text-yellow-300': currentFramework.value === 'chrome' },
+                { 'text-teal-300': currentFramework.value === 'tailwind' },
+                { 'text-blue-300': currentFramework.value === 'react' },
+                { 'text-green-300': currentFramework.value === 'vue' },
+                { 'text-orange-300': currentFramework.value === 'svelte' },
+                { 'text-red-300': currentFramework.value === 'mobile' },
+                { 'text-neutral-300': currentFramework.value === 'desktop' },
+              ]}
+            >
+              never
+            </span>{' '}
+            be the same again
           </h1>
         </div>
       </div>
