@@ -170,64 +170,65 @@ export default component$(() => {
                 <span class='opacity-50'>{'  return ('}</span>
               </div>
               <span class='hljs-tag'>
-                {'    '}&lt;<span class='hljs-name'>div</span>{' '}
-                <span class='hljs-attr'>className</span>=
-                <span class='hljs-string'>"flex flex-col"</span>&gt;
+                {'    '}&lt;<span class='text-red-400'>div</span>{' '}
+                <span class='text-orange-300'>className</span>=
+                <span class='text-green-300'>"flex flex-col"</span>&gt;
               </span>
               <div>
                 {' '}
                 <span class='hljs-tag'>
-                  {'     '}&lt;<span class='hljs-name'>Heading</span> /&gt;
+                  {'     '}&lt;<span class='text-red-400'>Heading</span> /&gt;
                 </span>
               </div>
               <div>
                 {' '}
                 <span class='hljs-tag'>
-                  {'     '}&lt;<span class='hljs-name'>Paragraph</span>{' '}
-                  <span class='hljs-attr'>className</span>=
-                  <span class='hljs-string'>"mt-6 self-center"</span> /&gt;
+                  {'     '}&lt;<span class='text-red-400'>Paragraph</span>{' '}
+                  <span class='text-orange-300'>className</span>=
+                  <span class='text-green-300'>"mt-6 self-center"</span> /&gt;
                 </span>
               </div>
               <div>
                 {' '}
                 <span class='hljs-tag'>
-                  {'     '}&lt;<span class='hljs-name'>div</span>{' '}
-                  <span class='hljs-attr'>className</span>=
-                  <span class='hljs-string'>"flex self-center gap-6"</span>&gt;
+                  {'     '}&lt;<span class='text-red-400'>div</span>{' '}
+                  <span class='text-orange-300'>className</span>=
+                  <span class='text-green-300'>"flex self-center gap-6"</span>&gt;
                 </span>
               </div>
               <div>
                 {' '}
                 <span class='hljs-tag'>
-                  {'       '}&lt;<span class='hljs-name'>TextField</span> /&gt;
+                  {'       '}&lt;<span class='text-red-400'>TextField</span>{' '}
+                  /&gt;
                 </span>
               </div>
               <div>
                 {' '}
                 <span class='hljs-tag'>
-                  {'       '}&lt;<span class='hljs-name'>Register</span>{' '}
-                  <span class='hljs-attr'>className</span>=
-                  <span class='hljs-string'>"mt-1"</span> /&gt;
+                  {'       '}&lt;<span class='text-red-400'>Register</span>{' '}
+                  <span class='text-orange-300'>className</span>=
+                  <span class='text-green-300'>"mt-1"</span> /&gt;
                 </span>
               </div>
               <div>
                 {' '}
                 <span class='hljs-tag'>
-                  {'     '}&lt;/<span class='hljs-name'>div</span>&gt;
+                  {'     '}&lt;/<span class='text-red-400'>div</span>&gt;
                 </span>
               </div>
               <div>
                 {' '}
                 <span class='hljs-tag'>
-                  {'     '}&lt;<span class='hljs-name'>Countdown</span>{' '}
-                  <span class='hljs-attr'>className</span>=
-                  <span class='hljs-string'>"mt-4 self-center"</span> /&gt;
+                  {'     '}&lt;<span class='text-red-400'>Countdown</span>{' '}
+                  <span class='text-orange-300'>className</span>=
+                  <span class='text-green-300'>"mt-4 self-center"</span> /&gt;
                 </span>
               </div>
               <div>
                 {' '}
                 <span class='hljs-tag'>
-                  {'   '}&lt;/<span class='hljs-name'>div</span>&gt;
+                  {'   '}&lt;/<span class='text-red-400'>div</span>&gt;
                 </span>
               </div>
               <div>
