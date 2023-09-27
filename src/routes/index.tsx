@@ -121,7 +121,12 @@ export default component$(() => {
               src={assets.figmatwo}
             />
           </p>
-          <div class='mb-8'>
+          <form class='flex gap-4 mb-8'>
+            <input
+              placeholder='your@email.com'
+              class='pl-2 w-[200px] md:w-[300px] rounded-md border-2 border-solid border-gray-400 px-4 py-3  shadow-sm placeholder:text-gray-400 backdrop-blur-sm'
+              style={{ background: 'rgba(255, 255, 255, 0.08);' }}
+            />
             <button
               class={[
                 'text-black',
@@ -145,7 +150,7 @@ export default component$(() => {
             >
               Claim Ticket
             </button>
-          </div>
+          </form>
           <CountdownTimer currentFramework={currentFramework} />
         </div>
         <div class='relative flex pointer-events-none mt-20'>
@@ -193,7 +198,8 @@ export default component$(() => {
                 <span class='hljs-tag'>
                   {'     '}&lt;<span class='text-red-400'>div</span>{' '}
                   <span class='text-orange-300'>className</span>=
-                  <span class='text-green-300'>"flex self-center gap-6"</span>&gt;
+                  <span class='text-green-300'>"flex self-center gap-6"</span>
+                  &gt;
                 </span>
               </div>
               <div>
