@@ -3,6 +3,7 @@ import type { DocumentHead } from '@builder.io/qwik-city';
 import { assets } from '@/utils/asset-utils';
 import { type Framework, frameworks } from '@/utils/framework-utils';
 import FrameworkRotation from '@/components/FrameworkRotation';
+import CountdownTimer from '@/components/CountdownTimer';
 
 export default component$(() => {
   const currentFramework = useSignal<Framework>(frameworks[0]);
@@ -145,6 +146,7 @@ export default component$(() => {
               Claim Ticket
             </button>
           </div>
+          <CountdownTimer currentFramework={currentFramework} />
         </div>
       </div>
     </main>
