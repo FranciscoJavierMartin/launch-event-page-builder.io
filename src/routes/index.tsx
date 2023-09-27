@@ -73,7 +73,7 @@ export default component$(() => {
       />
       <div class='max-w-7xl mt-20 mx-auto'>
         <div class='flex flex-col items-center relative z-10'>
-          <h1 class='text-5xl max-w-3xl text-center leading-snug mb-12'>
+          <h1 class='text-5xl max-w-3xl text-center leading-snug mb-12 font-bold'>
             <img
               alt='Figma logo'
               src={assets.figma}
@@ -120,6 +120,31 @@ export default component$(() => {
               src={assets.figmatwo}
             />
           </p>
+          <div class='mb-8'>
+            <button
+              class={[
+                'text-black',
+                'px-6',
+                'py-3',
+                'rounded-md',
+                'text-sm',
+                'font-semibold',
+                'transition-colors',
+                'duration-200',
+                { 'bg-purple-300': currentFramework.value === 'qwik' },
+                { 'bg-sky-300': currentFramework.value === 'safari' },
+                { 'bg-yellow-300': currentFramework.value === 'chrome' },
+                { 'bg-teal-300': currentFramework.value === 'tailwind' },
+                { 'bg-blue-300': currentFramework.value === 'react' },
+                { 'bg-green-300': currentFramework.value === 'vue' },
+                { 'bg-orange-300': currentFramework.value === 'svelte' },
+                { 'bg-red-300': currentFramework.value === 'mobile' },
+                { 'bg-neutral-300': currentFramework.value === 'desktop' },
+              ]}
+            >
+              Claim Ticket
+            </button>
+          </div>
         </div>
       </div>
     </main>
